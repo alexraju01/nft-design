@@ -2,14 +2,15 @@ import Button from "./Button";
 
 export default function Header() {
 	return (
-		<header className='flex justify-between items-center h-auto'>
-			<h1 className='font-extrabold text-[32px] mt-[47px] h-39-[px] w-[255px] '>
-				MARKETPLACE.
+		<header className='flex justify-between items-center'>
+			<h1 className='flex items-baseline font-extrabold text-[32px] leading-[38.73px] mt-[47px] h-[39px] w-[255px]'>
+				MARKETPLACE
+				<span className='w-[5px] h-[5px] bg-black ml-1'></span>
 			</h1>
-			{/* <button className='w-[203px] h-[67px]  mt-[33px] border border-[#23252B] rounded-[87px] px-[42px] '>
-        Connect wallet
-    </button> */}
-			<Button variant='variant3'>Connect wallet</Button>
+
+			<Button variant='variant3' className='mt-[33px]'>
+				Connect wallet
+			</Button>
 		</header>
 	);
 }

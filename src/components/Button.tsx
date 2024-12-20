@@ -1,17 +1,6 @@
+import { ButtonProps } from "@/types/buttonProps";
 import { variants } from "@/utils/const";
 
-export default function Button({ children, variant, className = "" }) {
-	return (
-		<button className={variant ? variants[variant] : variants["default"]}>
-			{children}
-		</button>
-	);
+export default function Button({ children, variant = "default", className = "" }: ButtonProps) {
+	return <button className={`${variants[variant]} ${className}`}>{children}</button>;
 }
-
-// return (
-// 	<button
-// 		{...props}
-// 		className={`${
-// 			props.variant ? variants[props.variant] : variants["default"]
-// 		}  ${props.className}`}></button>
-// );
