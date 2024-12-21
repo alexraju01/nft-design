@@ -1,5 +1,6 @@
 import CarouseIndicator from "@/components/CarouseIndicator";
 import Carousel from "@/components/Carousel";
+import Collection from "@/components/Collection";
 import Header from "@/components/Header";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
 			<Header />
 			<CarouseIndicator />
 			<Carousel />
+			<Collection />
 		</>
 	);
 }

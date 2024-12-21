@@ -8,7 +8,7 @@ export default function Carousel() {
 	return (
 		<section className='mt-[16px]  px-[20px] h-auto flex justify-between 2xl:px-[75px] 2xl:w-[1352px] 2xl:h-[518px] bg-[#E6E9F2] rounded-[30px]'>
 			<div>
-				<div className='mt-[102px] '>
+				<div className='mt-[71px] '>
 					{/* <p>Trending now</p> */}
 					<Label variant='variant4'>Trending now</Label>
 					<div className='mt-[37px]'>
