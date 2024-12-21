@@ -4,6 +4,7 @@ import artist from "../../public/carousel-artist.png";
 
 import Label from "./Label";
 import Button from "./Button";
+import BuyButton from "./BuyButton";
 export default function Carousel() {
 	return (
 		<section className='mt-[16px]  px-[20px] h-auto flex justify-between 2xl:px-[75px] 2xl:w-[1352px] 2xl:h-[518px] bg-[#E6E9F2] rounded-[30px]'>
@@ -32,7 +33,7 @@ export default function Carousel() {
 						</div>
 					</div>
 					<div className='flex gap-[16px] flex-col 2xl:flex-row  2xl:mt-[44px]'>
-						<Button>Buy</Button>
+						<BuyButton />
 						<Button variant='variant3'>See Collection</Button>
 					</div>
 				</div>
