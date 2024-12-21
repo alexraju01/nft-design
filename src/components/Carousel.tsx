@@ -1,11 +1,13 @@
 import Image from "next/image";
 import img from "../../public/carousel-image.png";
+import Label from "./Label";
 export default function Carousel() {
 	return (
 		<section className='mt-[16px] w-full px-[20px] h-auto flex justify-between 2xl:px-[75px] 2xl:w-[1352px] 2xl:h-[518px] bg-[#E6E9F2] rounded-[30px]'>
 			<div>
 				<div>
-					<p>Trending now</p>
+					{/* <p>Trending now</p> */}
+					<Label variant='variant4'>Trending now</Label>
 					<div>
 						<p>Night sky collection</p>
 						<p>With the stars</p>

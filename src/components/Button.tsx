@@ -1,6 +1,7 @@
 import { ButtonProps } from "@/types/buttonProps";
-import { variants } from "@/utils/const";
+import { btnVariants } from "@/utils/variants";
+// import { variants } from "@/utils/variants";
 
 export default function Button({ children, variant = "default", className = "" }: ButtonProps) {
-	return <button className={`${variants[variant]} ${className}`}>{children}</button>;
+	return <button className={`${btnVariants[variant]} ${className}`}>{children}</button>;
 }

@@ -11,6 +11,18 @@ export default {
 		extend: {
 			colors: {
 				customGray: "#23252B",
+				purple: {
+					200: "#D4D3EB",
+					500: "#837FEB",
+				},
+				green: {
+					200: "#E1EDD9",
+					500: "#B5D99F",
+				},
+				red: {
+					200: "#FADFE4",
+					500: "#F2738D",
+				},
 			},
 			utilities: {
 				".image-pixelated": {
