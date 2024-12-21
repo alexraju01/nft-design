@@ -11,9 +11,9 @@ export default function Carousel() {
 				<div className='mt-[71px] '>
 					{/* <p>Trending now</p> */}
 					<Label variant='variant4'>Trending now</Label>
-					<div className='mt-[37px]'>
+					<div className='mt-[20px] 2xl:mt-[37px]'>
 						<p className='text-gray-200 text-[24px]'>Night sky collection</p>
-						<p className='text-black font-extrabold text-[64px] leading-[77.45px]'>
+						<p className='text-black font-extrabold text-[55px] 2xl:text-[64px] md:leading-[50px] leading-[77.45px]'>
 							With the stars
 						</p>
 					</div>

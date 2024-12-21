@@ -1,15 +1,13 @@
 import Image from "next/image";
-import artistImage from "../../public/carousel-artist.png";
-import cardImage1 from "../../public/card-image1.png";
 import Label from "./Label";
 import { CardProps } from "@/types/cardProps";
 
-export default function Card({ title, artist }: CardProps) {
+export default function Card({ title, artist, img, cardImage }: CardProps) {
 	return (
 		<div className='w-full 2xl:w-[424px] 2xl:h-[529px] bg-[#FAFAFA] shadow-dark-100 rounded-[47px] p-[16.5px] flex flex-col'>
 			{/* Card Image */}
 			<div className='relative w-full h-[227px]'>
-				<Image src={cardImage1} alt='summer-image' fill className='object-cover rounded-[30px]' />
+				<Image src={cardImage} alt='summer-image' fill className='object-cover rounded-[30px]' />
 			</div>
 
 			{/* Card Content */}
@@ -34,7 +32,7 @@ export default function Card({ title, artist }: CardProps) {
 				<div className='flex mt-[14px] items-center gap-[15px]'>
 					<div className='relative w-[68px] h-[68px]'>
 						<Image
-							src={artistImage}
+							src={img}
 							quality={100}
 							alt='carousel-image'
 							fill
