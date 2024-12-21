@@ -23,6 +23,9 @@ export default {
 					200: "#FADFE4",
 					500: "#F2738D",
 				},
+				gray: {
+					200: "#617587",
+				},
 			},
 			utilities: {
 				".image-pixelated": {
