@@ -27,6 +27,11 @@ export default {
 					200: "#617587",
 				},
 			},
+
+			boxShadow: {
+				"dark-100": "box-shadow: 0px 4px 63.3px 0px #00000014",
+			},
+
 			utilities: {
 				".image-pixelated": {
 					"image-rendering": "pixelated",
