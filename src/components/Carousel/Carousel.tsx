@@ -1,10 +1,10 @@
 import Image from "next/image";
-import carouselImg from "../../public/carousel-image.png";
-import artist from "../../public/carousel-artist.png";
+import carouselImg from "../../../public/carousel-image.png";
+import artist from "../../../public/carousel-artist.png";
 
-import Label from "./Label";
-import Button from "./Button";
-import BuyButton from "./BuyButton";
+import Label from "../Label";
+import Button from "../Button";
+import BuyButton from "../BuyButton";
 import Link from "next/link";
 export default function Carousel() {
 	return (
