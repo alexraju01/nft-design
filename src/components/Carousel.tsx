@@ -34,7 +34,7 @@ export default function Carousel() {
 					</div>
 					<div className='flex gap-[16px] flex-col 2xl:flex-row  2xl:mt-[44px]'>
 						<Button>Buy</Button>
-						<Button>See Collection</Button>
+						<Button variant='variant3'>See Collection</Button>
 					</div>
 				</div>
 			</div>
