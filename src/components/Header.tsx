@@ -1,16 +1,29 @@
+"use client";
+
 import Link from "next/link";
 import Button from "./Button";
 import Logo from "./Logo";
+import { useAuth } from "@/context/AuthContext";
 
-export default function Header() {
+const Header: React.FC = () => {
+	const { isAuthenticated } = useAuth();
+
 	return (
-		<header className='w-full flex-col flex justify-between items-center  md:flex-row'>
+		<header className='w-full flex-col flex justify-between items-center md:flex-row'>
 			<Logo />
-			<Link href='/connect'>
-				<Button variant='variant3' className='mt-[33px] '>
-					Connect wallet
+			{isAuthenticated ? (
+				<Button variant='variant3' className='mt-[33px]'>
+					Connected
 				</Button>
-			</Link>
+			) : (
+				<Link href='/connect'>
+					<Button variant='variant3' className='mt-[33px]'>
+						Connect wallet
+					</Button>
+				</Link>
+			)}
 		</header>
 	);
-}
+};
+
+export default Header;
