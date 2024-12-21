@@ -12,6 +12,11 @@ export default {
 			colors: {
 				customGray: "#23252B",
 			},
+			utilities: {
+				".image-pixelated": {
+					"image-rendering": "pixelated",
+				},
+			},
 		},
 		screens: {
 			sm: "344px",
