@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 			<Logo />
 			{isAuthenticated ? (
 				<Button variant='variant3' className='mt-[33px]'>
-					Connected
+					Account
 				</Button>
 			) : (
 				<Link href='/connect'>
