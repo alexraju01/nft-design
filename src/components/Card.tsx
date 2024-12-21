@@ -1,13 +1,31 @@
 import Image from "next/image";
 import Label from "./Label";
 import { CardProps } from "@/types/cardProps";
+import Button from "./Button";
 
 export default function Card({ title, artist, img, cardImage }: CardProps) {
 	return (
-		<div className='w-full 2xl:w-[424px] 2xl:h-[529px] bg-[#FAFAFA] shadow-dark-100 rounded-[47px] p-[16.5px] flex flex-col'>
+		<div className='w-full 2xl:w-[424px] 2xl:h-[529px] bg-[#FAFAFA] shadow-dark-200 rounded-[47px] p-[16.5px] flex flex-col hover:scale-110 hover:shadow-dark-500 transition-all duration-300'>
 			{/* Card Image */}
-			<div className='relative w-full h-[227px]'>
-				<Image src={cardImage} alt='summer-image' fill className='object-cover rounded-[30px]' />
+			<div className='relative w-full h-[227px] group'>
+				{/* Dark overlay */}
+				<div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-[30px] z-10'></div>
+
+				<Image
+					src={cardImage}
+					alt='summer-image'
+					fill
+					className='object-cover rounded-[30px] z-0'
+				/>
+
+				{/* Button */}
+				<div className='absolute inset-0  z-20 pointer-events-none group-hover:pointer-events-auto'>
+					<Button
+						variant='variant5'
+						className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'>
+						Go to collection {"-->"}
+					</Button>
+				</div>
 			</div>
 
 			{/* Card Content */}

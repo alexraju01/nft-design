@@ -29,7 +29,8 @@ export default {
 			},
 
 			boxShadow: {
-				"dark-100": "0px 4px 66px 0px #00000029",
+				"dark-200": "0px 4px 63.3px 0px #00000014",
+				"dark-500": "0px 4px 66px 0px #00000029",
 			},
 
 			utilities: {
