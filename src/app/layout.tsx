@@ -32,7 +32,7 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${inter.className} antialiased bg-white min-h-screen`}>
 				{/* Main content */}
 
-				<main className='w-full px-[15px] md:mx-auto max-w-[1512px] xl:px-[79px]'>
+				<main>
 					<AuthProvider>{children}</AuthProvider>
 				</main>
 				{/* <Footer /> */}

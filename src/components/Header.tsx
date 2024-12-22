@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 	const { isAuthenticated } = useAuth();
 
 	return (
-		<header className='w-full flex-col flex justify-between items-center md:flex-row'>
+		<header className='px-[15px] md:mx-auto max-w-[1512px] xl:px-[79px] w-full flex-col flex justify-between items-center md:flex-row'>
 			<Logo />
 			{isAuthenticated ? (
 				<Button variant='variant3' className='mt-[33px]'>

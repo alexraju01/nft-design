@@ -27,7 +27,7 @@
 		"**/*.ts",
 		"**/*.tsx",
 		".next/types/**/*.ts",
-		"src/app/(pages)/collection/edf"
+		"src/app/(pages)/collection/"
 	],
 	"exclude": ["node_modules"]
 }

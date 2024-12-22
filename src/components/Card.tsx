@@ -2,13 +2,14 @@ import Image from "next/image";
 import Label from "./Label";
 import { CardProps } from "@/types/cardProps";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Card({ title, artist, img, cardImage }: CardProps) {
 	return (
 		<div className='w-full 2xl:w-[424px] 2xl:h-[529px] bg-[#FAFAFA] shadow-dark-200 rounded-[47px] p-[16.5px] flex flex-col hover:scale-110 hover:shadow-dark-500 transition-all duration-300'>
 			{/* Card Image */}
 			<div className='relative w-full h-[227px] group'>
-				{/* Dark overlay */}
+				{/* Dark overlay that take the entire image shape applied on hover*/}
 				<div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded-[30px] z-10'></div>
 
 				<Image
@@ -20,11 +21,13 @@ export default function Card({ title, artist, img, cardImage }: CardProps) {
 
 				{/* Button */}
 				<div className='absolute inset-0  z-20 pointer-events-none group-hover:pointer-events-auto'>
-					<Button
-						variant='variant5'
-						className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'>
-						Go to collection {"-->"}
-					</Button>
+					<Link href='/collection'>
+						<Button
+							variant='variant5'
+							className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'>
+							Go to collection {"-->"}
+						</Button>
+					</Link>
 				</div>
 			</div>
 
