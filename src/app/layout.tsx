@@ -1,16 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
-// import { AuthProvider } from "@/context/AuthContext";
-// import { AuthProvider } from "@/context/AuthContext";
-// import Footer from "@/components/Footer";
-
-// Configure fonts
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "800"] });
 
@@ -28,14 +19,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body
-				className={`${geistSans.variable} ${inter.className} antialiased bg-white min-h-screen`}>
-				{/* Main content */}
-
+			<body className={`${inter.className} antialiased bg-white min-h-screen`}>
 				<main>
 					<AuthProvider>{children}</AuthProvider>
 				</main>
-				{/* <Footer /> */}
 			</body>
 		</html>
 	);
