@@ -2,8 +2,9 @@ import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
 import Label from "./Label";
+import { NFTTypes } from "@/types/NFTTypes";
 
-export default function NFTCard({ title, cardImage }) {
+export default function NFTCard({ title, cardImage }: NFTTypes) {
 	return (
 		<div className='  w-full  h-[498px] 2xl:w-[424px]  shadow-dark-200 rounded-[47px] p-[16.5px] flex flex-col hover:scale-110 hover:shadow-dark-500 transition-all duration-300'>
 			<div className='relative w-full h-[345px] group'>
