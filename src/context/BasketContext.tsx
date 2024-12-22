@@ -24,4 +24,10 @@ export const BasketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 	);
 };
 
-export const useBasket = () => useContext(BasketContext);
+export const useBasket = (): BasketContextType => {
+	const context = useContext(BasketContext);
+	if (!context) {
+		throw new Error("useBasket must be used within a BasketProvider");
+	}
+	return context;
+};

@@ -33,7 +33,7 @@ const Header: React.FC = () => {
 										<div className='rounded-full w-[50px]  h-[50px] bg-[#29627F]'></div>
 										<h3 className='text-lg leading-[27.02px]'>STV6Q...4Z7WD</h3>
 									</div>
-									<Button onClick={toggleBasket} className='rounded-full w-6 h-6'>
+									<Button onClick={toggleBasket} className='!rounded-full !w-[30px] !h-[30px]'>
 										{"->"}
 									</Button>
 								</div>
