@@ -27,11 +27,13 @@ const Header: React.FC = () => {
 							Account
 						</Button>
 						{isBasketOpen && (
-							<div className='absolute px-0 w-full top-0 md:top-[16px] md:right-[0px] md:w-[400px] lg:w-[492px] max-h-[981px] bg-white shadow-lg rounded-[21px] border-[2px] border-[#02071D] 2xl:px-[28px] py-[26px] z-20 '>
-								<div className='flex justify-between items-center px-[28]'>
+							<div className='absolute px-[28px] w-[300px] right-[-17px] top-0 md:h-[981px] md:top-[16px]  md:w-[400px] lg:w-[492px] max-h-[981px] bg-white shadow-lg rounded-[21px] border-[2px] border-[#02071D] 2xl:px-[28px] py-[26px] z-20 '>
+								<div className='flex justify-between items-center '>
 									<div className='flex items-center gap-[5px]'>
 										<div className='rounded-full w-[50px]  h-[50px] bg-[#29627F]'></div>
-										<h3 className='text-lg leading-[27.02px]'>STV6Q...4Z7WD</h3>
+										<h3 className='text-lg leading-[27.02px] truncate max-w-[80px]'>
+											STV6Q...4Z7WD
+										</h3>
 									</div>
 									<Button onClick={toggleBasket} className='!rounded-full !w-[30px] !h-[30px]'>
 										{"->"}
