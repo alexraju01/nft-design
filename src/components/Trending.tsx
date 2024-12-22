@@ -13,7 +13,7 @@ export default function Trending() {
 						<Label variant='variant4' className='mb-[27px]'>
 							Trending Now
 						</Label>
-						<p className='text-gray-200 leading-[29.05px]'>Collection</p>
+						<p className='text-gray-200 leading-[29.05px] text-[24px]'>Collection</p>
 						<div className=' '>
 							<p className='text-black text-[64px] font-extrabold leading-[77.45px]'>Night sky </p>
 						</div>

@@ -25,7 +25,7 @@ export default function Card({ title, artist, img, cardImage }: CardProps) {
 						<Button
 							variant='variant5'
 							className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'>
-							Go to collection {"-->"}
+							Go to collection →
 						</Button>
 					</Link>
 				</div>
