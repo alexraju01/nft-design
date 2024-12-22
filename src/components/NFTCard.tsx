@@ -19,7 +19,7 @@ export default function NFTCard({ title, cardImage }: NFTTypes) {
 						<Button
 							variant='variant5'
 							className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'>
-							Go to collection →
+							Buy →
 						</Button>
 					</Link>
 				</div>
