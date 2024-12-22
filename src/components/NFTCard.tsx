@@ -1,10 +1,25 @@
+"use client";
 import Image from "next/image";
 import Button from "./Button";
-import Link from "next/link";
+// import Link from "next/link";
 import Label from "./Label";
-import { NFTTypes } from "@/types/NFTTypes";
+import { NFT } from "@/types/NFTTypes";
+import { useAuth } from "@/context/AuthContext";
+import { useBasket } from "@/context/BasketContext";
 
-export default function NFTCard({ title, cardImage }: NFTTypes) {
+export default function NFTCard({ title, cardImage }: NFT) {
+	const { isAuthenticated } = useAuth();
+	const { addToBasket } = useBasket();
+
+	const handleBuyClick = () => {
+		if (isAuthenticated) {
+			addToBasket({ title, cardImage });
+		} else {
+			// Redirect or show a message to connect wallet
+			alert("Please connect your wallet to purchase.");
+		}
+	};
+
 	return (
 		<div className='  w-full  h-[498px] 2xl:w-[424px]  shadow-dark-200 rounded-[47px] p-[16.5px] flex flex-col hover:scale-110 hover:shadow-dark-500 transition-all duration-300'>
 			<div className='relative w-full h-[345px] group'>
@@ -15,13 +30,12 @@ export default function NFTCard({ title, cardImage }: NFTTypes) {
 
 				{/* Button */}
 				<div className='absolute inset-0  z-20 pointer-events-none group-hover:pointer-events-auto'>
-					<Link href='/collection'>
-						<Button
-							variant='variant5'
-							className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'>
-							Buy →
-						</Button>
-					</Link>
+					<Button
+						variant='variant5'
+						className='opacity-0 absolute inset-0 m-auto group-hover:opacity-100 transition-opacity duration-300'
+						onClick={handleBuyClick}>
+						Buy →
+					</Button>
 				</div>
 			</div>
 			<div className='mt-[45px] flex items-center justify-between '>
