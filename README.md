@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React Figma Design Implementation
 
-## Getting Started
+This project is a demonstration of creating a user interface based on a design from Figma using the React framework with Next.js. The application includes responsive design, functionality to connect a wallet, and the ability to add purchased items to a user account. The application is deployed on Netlify.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. [Features](#features)
+2. [Technology Stack](#technology-stack)
+3. [Setup Instructions](#setup-instructions)
+4. [Approach](#approach)
+5. [Deployment](#deployment)
+6. [Screenshots](#screenshots)
+7. [Project Structure](#project-structure)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Figma Design Implementation**: The UI is built based on a provided Figma design.
+- **Wallet Connection**: Includes a button to connect a wallet that redirects to a "connected" page.
+- **Item Purchase**: Items can be "bought" and added to a simulated user account.
+- **Responsive Design**: Fully responsive layout for a seamless experience across devices.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: React with Next.js
+- **Styling**: Tailwind CSS
+- **Deployment**: Netlify
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Setup Instructions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Prerequisites
+
+- Node.js (v18.x or higher)
+- npm or yarn package manager
+- Git
+
+### Steps to Run Locally
+
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
